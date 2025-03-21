@@ -3,32 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>宋雪琪的个人网站</title>
+    <title>李四的个人网站 | 数据科学家</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- 引入 Font Awesome 图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>宋雪琪的个人网站</h1>
-        <p>计算机科学博士 | 数据科学研究者</p>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#projects">项目</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+    </nav>
+
+    <!-- 首页 -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>李四</h1>
+            <p>数据科学家 | 可重复性研究倡导者</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:email@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>📖 个人简介</h2>
-        <p>2024年毕业于武汉大学，研究方向为数据驱动化研究。</p>
+    <!-- 关于我 -->
+    <section id="about" class="section">
+        <h2>关于我</h2>
+        <div class="about-content">
+            <img src="https://via.placeholder.com/200" alt="头像" class="avatar">
+            <p>
+                我是XX大学计算机科学博士，专注于数据驱动的可重复性研究。<br>
+                擅长使用Python、R和Git进行数据分析与协作开发。
+            </p>
+        </div>
     </section>
 
-    <section id="education">
-        <h2>🎓 教育经历</h2>
-        <ul>
-            <li>武汉大学 - 计算机科学博士 (2020-2024)</li>
-            <li>武汉大学 - 计算机科学硕士 (2017-2020)</li>
-        </ul>
+    <!-- 项目展示 -->
+    <section id="projects" class="section">
+        <h2>近期项目</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>可重复性分析工具</h3>
+                <p>基于Python开发的开源工具，用于自动化数据验证。</p>
+                <a href="#" class="btn">查看代码</a>
+            </div>
+            <div class="project-card">
+                <h3>学术协作平台</h3>
+                <p>使用GitHub Actions实现的自动化论文评审系统。</p>
+                <a href="#" class="btn">案例研究</a>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>📧 联系方式</h2>
-        <p>邮箱：email@3557952340@qq.com</p>
-        <p>GitHub：<a href="https://github.com/Xueqi Song">yourusername</a></p>
+    <!-- 联系表单 -->
+    <section id="contact" class="section">
+        <h2>联系我</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="姓名" required>
+            <input type="email" placeholder="邮箱" required>
+            <textarea rows="5" placeholder="留言..." required></textarea>
+            <button type="submit" class="btn">发送</button>
+        </form>
     </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2024 李四. 基于 GitHub Pages 构建</p>
+    </footer>
 </body>
 </html>
